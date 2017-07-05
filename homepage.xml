@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgv"
+        android:src="@drawable/hotel"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/llv1"
+        android:weightSum="2"
+        android:layout_below="@+id/imgv"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/rgst"
+            android:text="REGISTER"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/log"
+            android:text="LOGIN"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <Button
+            android:id="@+id/view"
+            android:text="VIEW"
+            android:layout_below="@+id/llv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

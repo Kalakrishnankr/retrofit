@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.inspire.myapp.MainActivity">
+    <EditText
+        android:id="@+id/nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/ln"
+        android:layout_below="@+id/nm"
+        android:hint="Last Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/dob"
+        android:hint="Date of birth"
+        android:focusable="true"
+        android:layout_below="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llt"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/doj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+           android:id="@+id/depart"
+           android:layout_weight="1"
+           android:text="Department"
+            android:textSize="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+        <Spinner
+                android:id="@+id/spinner1"
+                android:layout_weight="1"
+                android:layout_below="@+id/doj"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt2"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/llt"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Position"/>
+
+        <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt3"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/llt2"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/sala"
+            android:hint="Salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/un"
+        android:layout_below="@+id/llt3"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/pwd"
+        android:hint="Password"
+        android:layout_below="@+id/un"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_register"
+        android:text="Register"
+        android:layout_below="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btn_view"
+        android:text="VIew"
+        android:layout_below="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/doj"
+        android:focusable="true"
+        android:hint="Date of joining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
